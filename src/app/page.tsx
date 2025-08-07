@@ -1,5 +1,6 @@
 'use client'
 
+import { Inter, Space_Grotesk } from 'next/font/google'
 import React, { useState, useRef } from 'react'
 import { motion, useInView, useScroll, useTransform, AnimatePresence, easeInOut, easeOut } from 'framer-motion'
 
@@ -728,16 +729,8 @@ const AboutSection = () => (
             whileHover={{ scale: 1.1, rotate: 5 }}
             className="w-20 h-20 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full mx-auto mb-4"
           />
-          <h3 className="font-bold">Founder 1</h3>
+          <h3 className="font-bold">Sharandeep Mukhopadhyay</h3>
           <p className="text-sm text-slate-500">The PG Survivor</p>
-        </motion.div>
-        <motion.div variants={fadeInUp} className="text-center">
-          <motion.div 
-            whileHover={{ scale: 1.1, rotate: -5 }}
-            className="w-20 h-20 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full mx-auto mb-4"
-          />
-          <h3 className="font-bold">Founder 2</h3>
-          <p className="text-sm text-slate-500">The Tiffin Expert</p>
         </motion.div>
       </motion.div>
     </div>
